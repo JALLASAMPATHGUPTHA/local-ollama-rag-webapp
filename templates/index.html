@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local RAG</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Ollama Local RAG</p>
+          <h1>Upload notes. Ask questions. Get grounded answers.</h1>
+        </div>
+        <div class="status" id="status">Ready</div>
+      </section>
+
+      <section class="workspace">
+        <form class="panel upload-panel" id="uploadForm">
+          <div class="panel-heading">
+            <h2>Documents</h2>
+            <button type="button" id="rebuildButton">Rebuild Index</button>
+          </div>
+          <label class="drop-zone" for="files">
+            <span class="drop-title">Choose .txt or .md files</span>
+            <span class="drop-subtitle">Files are saved locally and indexed with Ollama.</span>
+            <input id="files" name="files" type="file" accept=".txt,.md,text/plain,text/markdown" multiple>
+          </label>
+          <button class="primary" type="submit">Upload And Index</button>
+          <ul class="file-list" id="fileList"></ul>
+        </form>
+
+        <section class="panel ask-panel">
+          <div class="panel-heading">
+            <h2>Ask</h2>
+            <span class="model">llama3:latest</span>
+          </div>
+          <form id="askForm" class="question-form">
+            <textarea id="question" placeholder="Ask something about your uploaded documents..."></textarea>
+            <button class="primary" type="submit">Ask Question</button>
+          </form>
+          <article class="answer-box" id="answerBox">
+            <p class="muted">Your answer will appear here.</p>
+          </article>
+          <div class="sources" id="sources"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

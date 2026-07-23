@@ -1,0 +1,104 @@
+===========================================
+Artificial Intelligence Knowledge Base
+===========================================
+
+Section 1: What is Artificial Intelligence?
+
+Artificial Intelligence (AI) is a branch of computer science that focuses on creating systems capable of performing tasks that normally require human intelligence. These tasks include learning from data, understanding language, recognizing images, solving problems, and making decisions.
+
+AI can be divided into three categories:
+1. Narrow AI - Designed for a specific task.
+2. General AI - Can perform any intellectual task a human can do.
+3. Super AI - A theoretical AI that surpasses human intelligence.
+
+-------------------------------------------
+
+Section 2: Machine Learning
+
+Machine Learning (ML) is a subset of AI that allows computers to learn from data without being explicitly programmed.
+
+Types of Machine Learning:
+
+Supervised Learning
+- Uses labeled data.
+- Examples:
+  - House price prediction
+  - Email spam detection
+
+Unsupervised Learning
+- Uses unlabeled data.
+- Examples:
+  - Customer segmentation
+  - Clustering
+
+Reinforcement Learning
+- Learns through rewards and penalties.
+- Examples:
+  - Robotics
+  - Self-driving cars
+  - Game playing
+
+-------------------------------------------
+
+Section 3: Deep Learning
+
+Deep Learning is a subset of Machine Learning that uses artificial neural networks with multiple hidden layers.
+
+Popular architectures:
+- CNN (Convolutional Neural Networks)
+- RNN (Recurrent Neural Networks)
+- LSTM
+- Transformers
+
+Applications:
+- Face Recognition
+- Speech Recognition
+- Image Classification
+- Chatbots
+
+-------------------------------------------
+
+Section 4: Large Language Models (LLMs)
+
+A Large Language Model is trained on massive amounts of text data.
+
+Examples:
+- Llama 3
+- GPT
+- Mistral
+- Gemma
+- Qwen
+
+LLMs can:
+- Answer questions
+- Write code
+- Summarize documents
+- Translate languages
+- Generate text
+
+-------------------------------------------
+
+Section 5: Retrieval-Augmented Generation (RAG)
+
+Retrieval-Augmented Generation combines document retrieval with language generation.
+
+Pipeline:
+
+User Question
+      ↓
+Convert Question into Embedding
+      ↓
+Search Vector Database
+      ↓
+Retrieve Relevant Chunks
+      ↓
+Send Chunks + Question to LLM
+      ↓
+Generate Final Answer
+
+Advantages:
+- Uses private documents.
+- Reduces hallucinations.
+- Provides more accurate responses.
+- Does not require retraining the model.
+
